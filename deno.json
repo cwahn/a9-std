@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "noImplicitAny": false
+  },
+  "tasks": {
+    "test": "deno run test.ts",
+    "demo": "deno run demo.ts",
+    "all": "deno run test.ts && deno run demo.ts"
+  }
+}

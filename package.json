@@ -1,0 +1,55 @@
+{
+  "name": "a9-std",
+  "version": "0.1.0",
+  "description": "Minimal TypeScript library for JSON serialization that preserves prototypes and methods using UUID-tagged discriminated unions",
+  "main": "./dist/lib.js",
+  "module": "./dist/lib.js",
+  "types": "./dist/lib.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/lib.js",
+      "types": "./dist/lib.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "deno run test/test.ts",
+    "demo": "deno run examples/demo.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "serialization",
+    "deserialization",
+    "json",
+    "prototype",
+    "tagged-union",
+    "discriminated-union",
+    "adt",
+    "algebraic-data-types",
+    "typescript",
+    "deno"
+  ],
+  "author": "Chanwoo Ahn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cwahn/a9-std"
+  },
+  "bugs": {
+    "url": "https://github.com/cwahn/a9-std/issues"
+  },
+  "homepage": "https://github.com/cwahn/a9-std#readme",
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
