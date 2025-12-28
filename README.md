@@ -1,5 +1,8 @@
 # a9-std
 
+[![npm version](https://badge.fury.io/js/a9-std.svg)](https://www.npmjs.com/package/a9-std)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Minimal TypeScript library for JSON serialization that preserves prototypes and methods using UUID-tagged discriminated unions.
 
 ## Features
@@ -26,7 +29,13 @@ pnpm add a9-std
 ### Deno
 
 ```typescript
-import { Struct, tagType } from "https://deno.land/x/a9_std/src/lib.ts";
+import { Struct, tagType } from "https://deno.land/x/a9_std@v0.1.0/src/lib.ts";
+```
+
+Or import from npm with Deno:
+
+```typescript
+import { Struct, tagType } from "npm:a9-std@0.1.0";
 ```
 
 ## Quick Start
@@ -252,4 +261,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Repository
 
-https://github.com/chanwooahn/a9-std
+**GitHub:** https://github.com/cwahn/a9-std  
+**npm:** https://www.npmjs.com/package/a9-std
