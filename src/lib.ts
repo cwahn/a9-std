@@ -11,7 +11,11 @@ export type UUID = `${string}-${string}-${string}-${string}-${string}`;
 export type Document = { _: UUID } & { [key: string]: Field };
 export type Field = null | boolean | number | string | Document | Field[] | { [key: string]: Field };
 
-export type Serde = null | boolean | number | string | Struct | Serde[] | { [key: string]: Serde };
+/**
+ * Union of all serializable value types.
+ * Includes undefined to support optional fields and optional return values.
+ */
+export type Serde = null | undefined | boolean | number | string | Struct | Serde[] | { [key: string]: Serde };
 
 
 

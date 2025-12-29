@@ -1,6 +1,6 @@
 {
   "name": "a9-std",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Minimal TypeScript library for JSON serialization that preserves prototypes and methods using UUID-tagged discriminated unions",
   "main": "./dist/lib.js",
   "module": "./dist/lib.js",

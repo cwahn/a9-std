@@ -120,9 +120,9 @@ Template literal type for UUID validation.
 
 #### `Serde`
 ```typescript
-type Serde = null | boolean | number | string | Struct | Serde[] | { [key: string]: Serde };
+type Serde = null | undefined | boolean | number | string | Struct | Serde[] | { [key: string]: Serde };
 ```
-Union of all serializable value types.
+Union of all serializable value types. Includes `undefined` to support optional fields and methods returning optional values.
 
 #### `Document`
 ```typescript
